@@ -1,0 +1,35 @@
+{
+  "name": "berthlint",
+  "displayName": "Berth Lint",
+  "description": "Flags berth allocation problems in terminal manifests",
+  "version": "0.1.0",
+  "publisher": "vicjustine",
+  "engines": { "vscode": "^1.146.0" },
+  "categories": ["Linters"],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "berthlint.checkManifest",
+        "title": "Berth Lint: Check Manifest"
+      }
+    ],
+    "configuration": {
+      "title": "Berth Lint",
+      "properties": {
+        "berthlint.maxTeuPerBerth": {
+          "type": "number",
+          "default": 4000,
+          "description": "Maximum TEU that may be assigned to a single berth."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "pretest": "tsc -p ./",
+    "test": "vscode-test"
+  }
+
+}
