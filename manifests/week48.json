@@ -1,0 +1,6 @@
+[
+  { "berth": "B1", "vessel": "Baltic Dawn",  "teu": 2500 },
+  { "berth": "B1", "vessel": "Coral Trader", "teu": 2600 },
+  { "berth": "B2", "vessel": "Pacific Gull", "teu": 1100 },
+  { "berth": "B3", "vessel": "Arctic Lane",  "teu": 3900 }
+]
